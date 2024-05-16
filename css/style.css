@@ -109,14 +109,20 @@ font-family: 'Fira Sans', sans-serif;
 /*******************************************/
 /* HEADER AND NAV STYLING */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 1rem 2rem;
+  background-color: rgb(34, 40, 49);
   border-bottom: 1px solid rgb(38, 50, 67);
+  z-index: 999;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 
 nav img {
@@ -667,10 +673,11 @@ footer {
 }
 
 footer span {
+  font-weight: bold;
   background: linear-gradient(
     210deg,
-    rgba(29, 228, 255, 0.81) -6.94%,
-    rgba(59, 83, 168, 0.9) 97.22%
+    rgba(29, 229, 255, 0.913) -6.94%,
+    rgba(103, 126, 207, 0.993) 97.22%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
